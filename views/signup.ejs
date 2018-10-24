@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Details</title>
+        <link href="../assets/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div id="page-banner">
+                    <h1 class="title">Save Ur Details!</h1>
+                </div>
+            </header>
+            <div id="formstart">
+                <form id="details" method="POST" action="/auth/save">
+                    <input class="required" type="text" name="name" value="" placeholder="Full Name" />
+                    <div id="dropdown">
+                      <select name="DName">
+                        <option value="CSE">CSE</option>
+                        <option value="ISE">ISE</option>
+                      </select>
+                      <select name="Desgn">
+                        <option value="HOD">HOD</option>
+                        <option value="prof">Professor</option>
+                      </select>
+                    </div>
+                    <input class="required" type="text" name="email" value="" placeholder="Email" />
+                    <input class="required" type="Password" name="password" value="" placeholder="Password" />
+                    <div class="btn">
+                        <button class="btn1">Sign up!</button>
+                    </div>
+                </form>
+            </div>
+            <a href="/auth/login">LogIn</a>
+        </div>
+    </body>
+</html>

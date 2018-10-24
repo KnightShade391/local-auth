@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Details</title>
+        <link href="/assets/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div id="page-banner">
+                    <h1 class="title">Save Ur Details!</h1>
+                </div>
+            </header>
+            <div id="formstart">
+                <form id="details" method="POST" action="/auth/check">
+                    <input class="required" type="text" name="username" value="" placeholder="Email" />
+                    <input class="required" type="Password" name="password" value="" placeholder="Password" />
+                    <div class="btn">
+                        <button class="btn1">Login!</button>
+                    </div>
+                </form>
+            </div>
+            <a href="/auth/signup">Sign up</a>
+        </div>
+    </body>
+</html>
